@@ -4,20 +4,23 @@ import Footer from '@components/Footer'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Moja Strona</title>
       </Head>
-
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <h1>Witaj na stronie mojej imprezy!</h1>
+        <p>Wgraj zdjęcia i filmy z imprezy:</p>
+        <img src="/static/images/zdj1.jpg" alt="Zdjęcie z imprezy" />
+        <a
+          href="https://drive.google.com/drive/folder-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button>Załaduj pliki</button>
+        </a>
       </main>
-
-      <Footer />
     </div>
   )
 }
+import Head from 'next/head'
